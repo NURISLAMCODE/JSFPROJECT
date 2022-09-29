@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>PRODUCT</title>
+    </h:head>
+    <h:body>
+        <center>
+            <h2 style="background-color: #ff9738">PRODUCT</h2>
+            <h:form  style="background-color: #009999">
+                <fieldset>
+                    <legend><b>PRODUCT LIST</b></legend>
+            <table>
+                <tr>
+                    <td>Product ID: </td>
+                    <td><h:inputText value="#{product.id}"></h:inputText></td>
+                </tr>
+                <tr>
+                    <td>Product Price: </td>
+                    <td><h:inputText value="#{product.price}"></h:inputText></td>
+                </tr>
+                <tr>
+                    <td>Product quantity: </td>
+                    <td><h:inputText value="#{product.quantity}"></h:inputText></td>
+                </tr>
+                <tr>
+                    <td>Brand: </td>
+                    <td><h:inputText value="#{product.brand}"></h:inputText></td>
+                </tr>
+                
+                
+                
+            </table>
+                    <br></br>
+                    <table>
+                 <tr>
+                     <td><h:commandButton action="#{product.insert()}" value="Insert"></h:commandButton></td>
+                     <td><h:commandButton action="#{product.update()}" value="Update"></h:commandButton></td>
+                     <td><h:commandButton action="#{product.delete()}" value="Delete"></h:commandButton></td>
+                     <td><h:commandButton action="#{product.show()}" value="Show"></h:commandButton></td>
+                     <td><h:commandButton action="#{product.clear()}" value="Clear"></h:commandButton></td>
+                    
+                </tr>
+                    </table>
+                </fieldset>
+            </h:form>
+        </center>
+    </h:body>
+</html>
+
